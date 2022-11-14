@@ -1,7 +1,7 @@
 version: "3.3"
 services:
     mysql:
-        image: mysql:5.7
+        image: mysql:8.0
         command: --default-authentication-plugin=mysql_native_password
         restart: always
         environment:
@@ -11,7 +11,7 @@ services:
             - '3306:3306'
         volumes:
         #- ./data/:/var/lib/mysql/data
-            - ./conf:/etc/mysql/conf.d
-            - mysql-data:/var/lib/mysql
+        #    - ./conf:/etc/mysql/conf.d
+            - mysql-data-80:/var/lib/mysql
 volumes:
-  mysql-data:
+  mysql-data-80:
