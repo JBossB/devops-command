@@ -1,0 +1,4 @@
+# cat /dev/null > un_archivo.txt
+
+## Vaciar archivo 
+cat /dev/null > un_archivo.txt
